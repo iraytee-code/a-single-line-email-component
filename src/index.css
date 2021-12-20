@@ -1,13 +1,47 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  color: #ffffff;
+}
+p {
+  padding: 0;
+  margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.email-body {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  border: 2px solid #ffffff;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.email-description {
+  display: block;
+}
+
+.inbox-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.email-content {
+  cursor: pointer;
+  color: #555;
+}
+
+.email-content:hover {
+  color: #fff;
 }

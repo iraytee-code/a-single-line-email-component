@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Email from "./components/Email";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Email
+      sender="React Newsletter"
+      subject="React Newsletter - Issue 36"
+      date="July 15"
+      message="React Newsletter - Issue 36 July 15 read this issue on https://reactjs.org/tutorial/tutorial.html"
+    />
   );
 }
 
